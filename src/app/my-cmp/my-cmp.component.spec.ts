@@ -5,7 +5,7 @@ import { MyCmpComponent } from './my-cmp.component';
 describe('MyCmpComponent', () => {
   let component: MyCmpComponent;
   let fixture: ComponentFixture<MyCmpComponent>;
-
+//test
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ MyCmpComponent ]
