@@ -1,0 +1,32 @@
+<p>
+  my-cmp works!
+</p>
+<hr>
+<p>
+  {{name}}
+
+</p>
+<hr>
+<!-- interpolation -->
+<h1>{{myName | uppercase}}</h1>
+
+<hr>
+<!-- property binding  -->
+<img [src]="imageUrl"  alt="Unable to load">    
+
+<hr>
+<h2>{{myName }}</h2>
+<hr>
+<!-- Service Injection -->
+<h2>Today's Date: {{todayDate}}</h2>
+<br>
+<button class="colorclass" [class]="classesToApply">My Button</button>
+<br><br>
+
+<button style="color:rgb(28, 4, 49)" [ngStyle]="addStyles()">New Button</button>
+
+<p *ngIf ='isTrue; then Template1 else Template2'>Hello World </p>
+<ng-template #myTemp let-myVar = 'new Variable'>Template</ng-template>
+
+<ng-template #Template1>This is first template</ng-template><br>
+<ng-template #Template2>This is second template</ng-template>
